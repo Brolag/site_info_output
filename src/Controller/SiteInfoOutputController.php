@@ -25,9 +25,8 @@ class SiteInfoOutputController extends ControllerBase
    */
   public function getSiteName()
   {
-
       $site_information = [
-        'site_slogan' => $this->config('system.site')->get('name'),
+        'site_name' => $this->config('system.site')->get('name'),
       ];
 
       return new JsonResponse($site_information);
@@ -35,7 +34,6 @@ class SiteInfoOutputController extends ControllerBase
 
    public function getSiteSlogan()
   {
-
       $site_information = [
         'site_slogan' => $this->config('system.site')->get('slogan'),
       ];
