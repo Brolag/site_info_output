@@ -1,0 +1,16 @@
+site_info_output.user_detail_controller_getSiteSlogan:
+  path: 'site-info-name'
+  defaults:
+    _controller: '\Drupal\site_info_output\Controller\SiteInfoOutputController::getSiteName'
+    _title: 'Site Name'
+  requirements:
+    _permission: 'access content'
+
+site_info_output.user_detail_controller_getSiteName:
+  path: 'site-info-slogan'
+  defaults:
+    _controller: '\Drupal\site_info_output\Controller\SiteInfoOutputController::getSiteSlogan'
+    _title: 'Site Slogan'
+  requirements:
+    _permission: 'access content'
+

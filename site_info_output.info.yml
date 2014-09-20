@@ -1,0 +1,5 @@
+name: Site Info Output
+type: module
+description: Custom module that returns a json response of site information
+core: 8.x
+package: Demo
